@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <meta charset="UTF-8">
+     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/sandstone/bootstrap.min.css" rel="stylesheet" integrity="sha384-G3G7OsJCbOk1USkOY4RfeX1z27YaWrZ1YuaQ5tbuawed9IoreRDpWpTkZLXQfPm3" crossorigin="anonymous">
+
+     <link rel="stylesheet" href="./assets/css/style.css">
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Crystals Collector</title>
+    
+  </head>
+
+
+ <body>
+
+<div class="container-fluid">
+
+
+   <div class="row">
+    <div class="col-xs-12 col-md-12 header borders">
+       	<h1 class="headerfonts center">Crystals Collector</h1>
+          <h2 class="left">Instructions</h2>
+          <p class="paragraphFormat">You will be given a random number at the start of the game.</p>
+          <p class="paragraphFormat">There are four crystals below. By clicking on a crystal you will add a specific amount of  points to your total score.</p>
+          <p class="paragraphFormat">You win the game by matching your total score to random number, you loose the game if your total score goes above the random number.</p>
+          <p class="paragraphFormat">The value of each crystal is hidden from you untill click on it</p>
+          <p class="paragraphFormat">Each time whne the game starts, the game will change values of each crystal</p> 
+    </div> 
+  </div>  
+
+
+	<div class="row">
+  		<div id="pic" class="col-xs-6 col-md-6 borders">
+          <h3 class=" center">Random Number</h3> 
+          <div class="panel-body">
+             <div id="randomNumber"></div>
+  	  		</div>
+  		</div>
+
+      <div id = "scoreBoard" class="col-xs-6 col-md-6 borders">
+    		  <h3 class="headerfonts center">Score Board</h3>
+    			<div id="display">
+    			    <p id="wins">Wins :</p>
+    			   	<p id="losses">Losses :</p>
+              <p id="totalScore">Your Total Score is :</p>
+    			</div>
+  	  </div>
+	</div>
+ <!-- Crystal images/btns section-->
+  <div class="row">
+      <div id="crystalSection" class="col-xs-12 col-md-12 bordersUp">
+          <div class="panel-body">
+              <div id="crystalBtns">
+                <img id ="img1" src="./assets/images/c1.png" class="imgCrystals">
+                <img id ="img2" src="./assets/images/c2.png" class="imgCrystals">
+                <img id ="img3" src="./assets/images/c3.png" class="imgCrystals">
+                <img id ="img4" src="./assets/images/c4.png" class="imgCrystals">  
+              </div>
+          </div>
+      </div>
+  </div> 
+  <!-- Game control buttons section-->
+  <div class="row">
+      <div class="col-xs-12 col-md-12">
+          <div class="panel-body">
+              <div id="btns">
+                  <button id="btnNewGame" type="button" class="btn btn-secondary gameBtns">New Game</button>
+                  <button id="btnResume" type="button" class="btn btn-secondary gameBtns">Resume</button>
+                  <button id="btnDisplay" type="button" class="btn btn-secondary gameBtns">Console</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+</div>
+
+<script type="text/javascript" src="./assets/javascript/game.js"></script>
+
+</body>
+</html>
