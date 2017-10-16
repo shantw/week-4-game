@@ -33,19 +33,23 @@ body {
   background-image:url("../images/bg.png");
 }
 
-.borders {
-  border-style: solid;
-  border-color: black;
+.bordersBottom {
+  border-bottom: inset;
+  border-color: #fff;
 }
 
 .bordersUp {
-  border-bottom: solid;
-  border-color: black;
+  border-top: inset;
+  border-color: #fff;
 }
 
 .headerfonts {
   font-family: "Georgia", "Times", "Times New Roman", "serif";
   font-weight: 700;
+}
+
+#marg{
+  margin-bottom: 10px;
 }
 
 .imgCrystals {
@@ -64,6 +68,8 @@ body {
 
 .gameBtns {
   color: black;
+  margin-right: 10px;
+  width: 90px;
 
 }
 
@@ -77,4 +83,8 @@ body {
 
 .center{
   text-align: center;
+}
+
+#randomNumber {
+  font-size: 24px;
 }
